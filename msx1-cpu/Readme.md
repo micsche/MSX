@@ -1,7 +1,7 @@
 The aim of the board is to use stock hardware without the use of FPGAs, CPLDs, logic arrays, etc...
 The chip count as a result increases considerably.
 
-MSX CPU board
+# MSX CPU board
 
 This is a default CPU board complete with 
 1. 3.58MHz clock circuit using a NAND invertor circuit. The board can choose which clock to using Jumpers CLK_EXT. Using an external clock circuit allows you to clock down the circuit for troubleshooting (logic analyser) or else use the VDPs own clock circuitry. 
