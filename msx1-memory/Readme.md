@@ -10,9 +10,9 @@ The MSX1 standard: ROM is using the first 32k address 0000-7FFF (normally at SLO
 ![alt text](https://github.com/micsche/MSX/blob/main/msx1-memory/msx-mem.svg)
 
 ## Using the board for SBC operation
-This board is adapted for the SBC part. A modification on the ROM part should remove the A15 address decoding to use just 32k.
+This board is adapted to be used as an SBC. A modification on the ROM should remove the A15 address decoding to use just 32k.
 This is done using a 74LS139 that decodes the A15 and MREQ to produce the SLTSL0 and SLTSL3 selector signals. 
 When used in MSX mode the 74LS139 can be disabled by disconnecting jumper SimpleMem (which powers the Logic Circuit).
 
 ## Serial Connection
-The board also uses the IO Serial signal to connect a USB Serial connection to the Z80 databus. The part is a breakout board CJMCU-232H. 
+The board also uses the IO Serial signal to connect a USB Serial connection to the Z80 databus. The circuit interfaces with a breakout board CJMCU-232H, which is TTL compliant.
